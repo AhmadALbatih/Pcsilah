@@ -17,6 +17,9 @@
             android:layout_height="?attr/actionBarSize"
             android:background="?attr/colorPrimary"
             app:popupTheme="@style/Theme.Pcsilah.PopupOverlay" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></ImageView>
 
     </com.google.android.material.appbar.AppBarLayout>
 

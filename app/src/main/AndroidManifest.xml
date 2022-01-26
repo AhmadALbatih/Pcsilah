@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Pcsilah">
         <activity
-            android:name=".MainActivity2"
+            android:name=".MainActivity"
             android:exported="false" />
     </application>
 

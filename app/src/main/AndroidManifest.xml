@@ -10,16 +10,23 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Pcsilah">
         <activity
+            android:name=".demo_case"
+            android:exported="false" />
+        <activity
+            android:name=".demo_m"
+            android:exported="false" />
+        <activity
             android:name=".home_main"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter> </activity>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

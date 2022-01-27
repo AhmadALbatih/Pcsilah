@@ -4,45 +4,53 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context=".demo_case"
     android:background="@color/backgrand">
 
-    <Button
-        android:id="@+id/buttont"
-        android:layout_width="214dp"
-        android:layout_height="87dp"
-        android:background="@drawable/button_start"
-        android:text="@string/tot"
-        android:textColor="@color/white"
-        android:textSize="30dp"
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="364dp"
+        android:layout_height="280dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.553"
+        app:layout_constraintHorizontal_bias="0.489"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.388"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/case1" />
 
-    <Button
-        android:id="@+id/buttoninfo"
-        android:layout_width="214dp"
-        android:layout_height="87dp"
-        android:background="@drawable/button_start"
-        android:text="@string/ifo"
-        android:textColor="@color/white"
-        android:textSize="30dp"
+    <ScrollView
+        android:layout_width="369dp"
+        android:layout_height="334dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.553"
+        app:layout_constraintHorizontal_bias="0.6"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.625"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.114">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="316dp"
+                android:layout_height="match_parent"
+                android:text="@string/f"
+                android:textColor="@color/black"
+                android:textSize="23dp"
+                tools:layout_editor_absoluteX="85dp"
+                tools:layout_editor_absoluteY="143dp" />
+        </LinearLayout>
+    </ScrollView>
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="133dp"
-        android:layout_height="76dp"
+        android:layout_width="127dp"
+        android:layout_height="51dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.942"
@@ -55,9 +63,9 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/skip"
+        android:text="إنهاء"
         android:textColor="@color/btnstart"
-        android:textSize="25dp"
+        android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.855"

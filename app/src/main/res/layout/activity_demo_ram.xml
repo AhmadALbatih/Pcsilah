@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".demo_case"
+    tools:context=".demo_ram"
     android:background="@color/backgrand">
 
     <ImageView
@@ -17,17 +17,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/case1" />
+        app:srcCompat="@drawable/ram" />
 
     <ScrollView
-        android:layout_width="369dp"
-        android:layout_height="334dp"
+        android:layout_width="403dp"
+        android:layout_height="331dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.114">
+        app:layout_constraintVertical_bias="0.279">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -49,8 +49,8 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="127dp"
-        android:layout_height="51dp"
+        android:layout_width="128dp"
+        android:layout_height="43dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.942"
@@ -63,7 +63,7 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="إنهاء"
+        android:text="@string/skip"
         android:textColor="@color/btnstart"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"

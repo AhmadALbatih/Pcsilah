@@ -7,50 +7,23 @@
     tools:context=".demo_case"
     android:background="@color/backgrand">
 
+
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="364dp"
         android:layout_height="280dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintHorizontal_bias="0.34"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/case1" />
 
-    <ScrollView
-        android:layout_width="369dp"
-        android:layout_height="334dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.6"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.114">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_width="316dp"
-                android:layout_height="match_parent"
-                android:text="@string/f"
-                android:textColor="@color/black"
-                android:textSize="23dp"
-                tools:layout_editor_absoluteX="85dp"
-                tools:layout_editor_absoluteY="143dp" />
-        </LinearLayout>
-    </ScrollView>
-
     <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="127dp"
-        android:layout_height="51dp"
+        android:id="@+id/end"
+        android:layout_width="103dp"
+        android:layout_height="39dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.942"
@@ -72,4 +45,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.977" />
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="382dp"
+        android:layout_height="334dp"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.551"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.705"
+        tools:ignore="MissingConstraints" />
 </androidx.constraintlayout.widget.ConstraintLayout>

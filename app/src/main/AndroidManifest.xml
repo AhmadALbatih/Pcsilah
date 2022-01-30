@@ -10,9 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Pcsilah">
         <activity
-            android:name=".demo_gpu"
+            android:name=".demo_ssd"
             android:exported="false" />
 
+        <activity
+            android:name=".demo_case"
+            android:exported="false"/>
         <activity
             android:name=".demo_m"
             android:exported="false" />
@@ -24,8 +27,9 @@
             android:name=".home_main"
             android:exported="false" />
         <activity
-            android:name=".demo_case"
-            android:exported="true">
+            android:name=".demo_gpu"
+            android:exported="true" >
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

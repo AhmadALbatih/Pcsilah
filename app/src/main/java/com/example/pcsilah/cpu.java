@@ -1,12 +1,14 @@
 package com.example.pcsilah;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
 import android.os.Bundle;
 import java.util.HashMap;
 import java.util.Map;
 public class cpu extends AppCompatActivity {
 
-    Map<String,String> intelcpu1  = new HashMap<String,String>();
+	HashMap<String,String> intelcpu1  = new HashMap<String,String>();
 
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -28,9 +30,10 @@ public class cpu extends AppCompatActivity {
 
 		intelcpu1.put("Image","");
 
-		System.out.print(intelcpu1);
+		Intent intent = new Intent(this, demo_case.class);
+		intent.putExtra("map", intelcpu1);
 
-
+		startActivity(intent);
 
 	}
 }

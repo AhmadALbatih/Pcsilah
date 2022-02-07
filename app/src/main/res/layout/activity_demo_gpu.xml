@@ -48,7 +48,7 @@
     <TextView
         android:id="@+id/tv3"
         android:layout_width="383dp"
-        android:layout_height="395dp"
+        android:layout_height="416dp"
         android:textColor="@color/black"
         android:textSize="18dp"
         app:layout_constraintBottom_toBottomOf="parent"

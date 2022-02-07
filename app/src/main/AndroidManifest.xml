@@ -16,9 +16,7 @@
         <activity
             android:name=".demo_case"
             android:exported="false"/>
-        <activity
-            android:name=".demo_m"
-            android:exported="false" />
+
 
         <activity
             android:name=".MainActivity"
@@ -28,8 +26,13 @@
             android:exported="false" />
         <activity
             android:name=".demo_gpu"
-            android:exported="true" >
-
+            android:exported="false"/>
+        <activity
+            android:name=".demo_ram"
+            android:exported="false"/>
+            <activity
+                android:name=".demo_m"
+                android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

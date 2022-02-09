@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Pcsilah">
         <activity
+            android:name=".Catagori"
+            android:exported="false" />
+        <activity
             android:name=".Result"
             android:exported="false" />
         <activity

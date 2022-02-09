@@ -2,38 +2,30 @@ package com.example.pcsilah;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
-import java.util.HashMap;
-import java.util.Map;
+import android.widget.ListView;
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class cpu extends AppCompatActivity {
+	private List<cpuclass> cpuList;
+	private CpuAdapter cpuAdapter;
 
-	HashMap<String,String> intelcpu1  = new HashMap<String,String>();
-
+	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_main);
+		setContentView(R.layout.cpu);
+		cpuList = new ArrayList<>();
+		cpuList.add(new cpuclass("Intel", "i3-8100","4 cores,","3.60 GHz","6 MB Intel® Smart Cache","Intel® UHD Graphics 630","65 W",R.drawable.cpu));
+		cpuList.add(new cpuclass("Intel", "i3-8100","4 cores,","3.60 GHz","6 MB Intel® Smart Cache","Intel® UHD Graphics 630","65 W",R.drawable.cpu));
+		cpuList.add(new cpuclass("Intel", "i3-8100","4 cores,","3.60 GHz","6 MB Intel® Smart Cache","Intel® UHD Graphics 630","65 W",R.drawable.cpu));
+		cpuList.add(new cpuclass("Intel", "i3-8100","4 cores,","3.60 GHz","6 MB Intel® Smart Cache","Intel® UHD Graphics 630","65 W",R.drawable.cpu));
+		cpuList.add(new cpuclass("Intel", "i3-8100","4 cores,","3.60 GHz","6 MB Intel® Smart Cache","Intel® UHD Graphics 630","65 W",R.drawable.cpu));
+		cpuAdapter = new CpuAdapter(this, 0, cpuList);
+		ListView listView = (ListView) findViewById(R.id.names_list_view);
+		listView.setAdapter(cpuAdapter);
 
-		intelcpu1.put("المصنع Chipset Manufacturer","Intel");
-
-		intelcpu1.put("المعالج CPU","i3-8100");
-
-		intelcpu1.put("عدد الأنوية Cores","4 cores");
-
-		intelcpu1.put("سرعة المعالجة في ساعة (Clock speed)","3.60 GHz");
-
-		intelcpu1.put("مستوى التخزينات المؤقته (L Caches)","6 MB Intel® Smart Cache");
-
-		intelcpu1.put("معالجة الرسومات (Processor Graphics)","Intel® UHD Graphics 630");
-
-		intelcpu1.put("طاقة تصميم حراري(TDP)","65 W");
-
-		intelcpu1.put("Image","");
-
-		Intent intent = new Intent(this, demo_case.class);
-		intent.putExtra("map", intelcpu1);
-
-		startActivity(intent);
 
 	}
 }

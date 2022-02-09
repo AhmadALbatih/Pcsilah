@@ -19,6 +19,9 @@
     <string name="Questions2_o1">شخصي</string>
     <string name="Questions2_o2">عمل</string>
     <string name="Questions2_o3">العاب</string>
+    <string name="cpu_page">حاسوب صلة - المعالجات</string>
+    <string name="Chipset_Manufacturer">المصنع</string>
+    <string name="CPU">المصنع</string>
 
     <string name="f">The two widely used forms of modern RAM are static RAM (SRAM) and dynamic RAM (DRAM)\n
 . In SRAM, a bit of data is stored using the state of a six-transistor memory cell, typically using\n six MOSFETs (metal-oxide-semiconductor field-effect transistors).\n

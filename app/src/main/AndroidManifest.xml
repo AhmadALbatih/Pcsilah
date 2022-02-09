@@ -13,6 +13,9 @@
             android:name=".Result"
             android:exported="false" />
         <activity
+            android:name=".Questions_page2"
+            android:exported="false" />
+        <activity
             android:name=".Questions_page1"
             android:exported="false" />
         <activity

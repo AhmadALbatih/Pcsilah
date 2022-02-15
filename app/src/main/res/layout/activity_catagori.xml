@@ -22,7 +22,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/app_name"
+                android:text="@string/catag_page"
                 android:textSize="17sp"
                 android:gravity="center_vertical"
                 android:textColor="@color/white"
@@ -32,11 +32,11 @@
     </com.google.android.material.appbar.AppBarLayout>
 
     <Button
-        android:id="@+id/buttont"
+        android:id="@+id/buttoncpu"
         android:layout_width="214dp"
         android:layout_height="87dp"
         android:background="@drawable/button_start"
-        android:text="@string/tot"
+        android:text="@string/cpu"
         android:textColor="@color/white"
         android:textSize="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -44,15 +44,15 @@
         app:layout_constraintHorizontal_bias="0.553"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.388"
+        app:layout_constraintVertical_bias="0.142"
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/buttoninfo"
+        android:id="@+id/buttonram"
         android:layout_width="214dp"
         android:layout_height="87dp"
         android:background="@drawable/button_start"
-        android:text="@string/ifo"
+        android:text="@string/ram"
         android:textColor="@color/white"
         android:textSize="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -60,10 +60,55 @@
         app:layout_constraintHorizontal_bias="0.553"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.625"
         tools:ignore="MissingConstraints" />
 
+    <Button
+        android:id="@+id/buttoncase"
+        android:layout_width="214dp"
+        android:layout_height="87dp"
+        android:background="@drawable/button_start"
+        android:text="@string/cases"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.553"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.322"
+        tools:ignore="MissingConstraints" />
 
+    <Button
+        android:id="@+id/buttongpu"
+        android:layout_width="214dp"
+        android:layout_height="87dp"
+        android:background="@drawable/button_start"
+        android:text="@string/gpu"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.553"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.686"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/buttonhd"
+        android:layout_width="214dp"
+        android:layout_height="87dp"
+        android:background="@drawable/button_start"
+        android:text="@string/harddisk"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.553"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.857"
+        tools:ignore="MissingConstraints" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

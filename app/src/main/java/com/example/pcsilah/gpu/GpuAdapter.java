@@ -1,4 +1,4 @@
-package com.example.pcsilah;
+package com.example.pcsilah.gpu;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -6,13 +6,16 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.example.pcsilah.R;
+
 import java.util.List;
 
-public class CpuAdapter extends ArrayAdapter<cpuclass>{
-    private static final String TAG = CpuAdapter.class.getSimpleName();
-    List<cpuclass> cpuList;
+public class GpuAdapter extends ArrayAdapter<gpuclass>{
+    private static final String TAG = GpuAdapter.class.getSimpleName();
+    List<gpuclass> cpuList;
 
-    public CpuAdapter(Context context, int resource, List<cpuclass> objects) {
+    public GpuAdapter(Context context, int resource, List<gpuclass> objects) {
         super(context, resource, objects);
 
         cpuList = objects;
@@ -20,7 +23,7 @@ public class CpuAdapter extends ArrayAdapter<cpuclass>{
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
             View listItemView = convertView;
-        cpuclass currentcpu = cpuList.get(position);
+        gpuclass currentcpu = cpuList.get(position);
 
             if(listItemView == null){
                 listItemView = LayoutInflater.from(getContext()).inflate(R.layout.cpulist, parent, false);

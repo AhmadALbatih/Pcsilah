@@ -1,6 +1,6 @@
-package com.example.pcsilah;
+package com.example.pcsilah.gpu;
 
-public class cpuclass {
+public class gpuclass {
 	private String Chipset_Manufacture;
 	private String CPU;
 	private String Cores;
@@ -10,7 +10,7 @@ public class cpuclass {
 	private String TDP;
 	private int Image;
 
-	public cpuclass(String chipset_Manufacture, String CPU, String cores, String clock_speed, String l_Caches, String processor_Graphics, String TDP, int image) {
+	public gpuclass(String chipset_Manufacture, String CPU, String cores, String clock_speed, String l_Caches, String processor_Graphics, String TDP, int image) {
 		Chipset_Manufacture = chipset_Manufacture;
 		this.CPU = CPU;
 		Cores = cores;

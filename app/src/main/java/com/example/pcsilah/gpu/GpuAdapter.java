@@ -13,20 +13,20 @@ import java.util.List;
 
 public class GpuAdapter extends ArrayAdapter<gpuclass>{
     private static final String TAG = GpuAdapter.class.getSimpleName();
-    List<gpuclass> cpuList;
+    List<gpuclass> gpuList;
 
     public GpuAdapter(Context context, int resource, List<gpuclass> objects) {
         super(context, resource, objects);
 
-        cpuList = objects;
+        gpuList = objects;
     }
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
             View listItemView = convertView;
-        gpuclass currentcpu = cpuList.get(position);
+        gpuclass currentcpu = gpuList.get(position);
 
             if(listItemView == null){
-                listItemView = LayoutInflater.from(getContext()).inflate(R.layout.cpulist, parent, false);
+                listItemView = LayoutInflater.from(getContext()).inflate(R.layout.gpulist, parent, false);
             }
 
         TextView cmTextView = (TextView) listItemView.findViewById(R.id.cm);

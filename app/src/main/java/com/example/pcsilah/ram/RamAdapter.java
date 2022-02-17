@@ -1,4 +1,4 @@
-package com.example.pcsilah.gpu;
+package com.example.pcsilah.ram;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,19 +11,19 @@ import com.example.pcsilah.R;
 
 import java.util.List;
 
-public class GpuAdapter extends ArrayAdapter<gpuclass>{
-    private static final String TAG = GpuAdapter.class.getSimpleName();
-    List<gpuclass> gpuList;
+public class RamAdapter extends ArrayAdapter<ramclass>{
+    private static final String TAG = RamAdapter.class.getSimpleName();
+    List<ramclass> ramList;
 
-    public GpuAdapter(Context context, int resource, List<gpuclass> objects) {
+    public RamAdapter(Context context, int resource, List<ramclass> objects) {
         super(context, resource, objects);
 
-        gpuList = objects;
+        ramList = objects;
     }
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
             View listItemView = convertView;
-        gpuclass currentcpu = gpuList.get(position);
+        ramclass currentcpu = ramList.get(position);
 
             if(listItemView == null){
                 listItemView = LayoutInflater.from(getContext()).inflate(R.layout.gpulist, parent, false);
@@ -33,19 +33,19 @@ public class GpuAdapter extends ArrayAdapter<gpuclass>{
         cmTextView.setText(currentcpu.getChipset_Manufacture());
 
         TextView cpuTextView = (TextView) listItemView.findViewById(R.id.cpu);
-        cpuTextView.setText(currentcpu.getGPU());
+        cpuTextView.setText(currentcpu.getCPU());
 
         TextView coresTextView = (TextView) listItemView.findViewById(R.id.Cores);
-        coresTextView.setText(currentcpu.getMemory());
+        coresTextView.setText(currentcpu.getCores());
 
         TextView Clock_speedTextView = (TextView) listItemView.findViewById(R.id.Clock_speed);
-        Clock_speedTextView.setText(currentcpu.getMemory_Type());
+        Clock_speedTextView.setText(currentcpu.getClock_speed());
 
         TextView Processor_GraphicsTextView = (TextView) listItemView.findViewById(R.id.Processor_Graphics);
-        Processor_GraphicsTextView.setText(currentcpu.getMemory_clock());
+        Processor_GraphicsTextView.setText(currentcpu.getProcessor_Graphics());
 
         TextView TDPTextView = (TextView) listItemView.findViewById(R.id.TDP);
-        TDPTextView.setText(currentcpu.getMemory_bandwidth());
+        TDPTextView.setText(currentcpu.getTDP());
 
         ImageView numbersImage = listItemView.findViewById(R.id.imageView);
         assert listItemView != null;

@@ -2,22 +2,24 @@ package com.example.pcsilah.gpu;
 
 public class gpuclass {
 	private String Chipset_Manufacture;
-	private String CPU;
-	private String Cores;
-	private String Clock_speed;
-	private String L_Caches;
-	private String Processor_Graphics;
-	private String TDP;
+	private String GPU;
+	private String Brand;
+	private String Memory;
+	private String Memory_Type;
+	private String GPU_clock;
+	private String Memory_clock;
+	private String Memory_bandwidth;
 	private int Image;
 
-	public gpuclass(String chipset_Manufacture, String CPU, String cores, String clock_speed, String l_Caches, String processor_Graphics, String TDP, int image) {
+	public gpuclass(String chipset_Manufacture, String GPU, String brand, String memory, String memory_type, String gpu_clock, String memory_clock, String memory_bandwidth, int image) {
 		Chipset_Manufacture = chipset_Manufacture;
-		this.CPU = CPU;
-		Cores = cores;
-		Clock_speed = clock_speed;
-		L_Caches = l_Caches;
-		Processor_Graphics = processor_Graphics;
-		this.TDP = TDP;
+		this.GPU = GPU;
+		Brand = brand;
+		Memory = memory;
+		Memory_Type = memory_type;
+		GPU_clock = gpu_clock;
+		Memory_clock = memory_clock;
+		this.Memory_bandwidth = memory_bandwidth;
 		Image = image;
 	}
 
@@ -25,28 +27,30 @@ public class gpuclass {
 		return Chipset_Manufacture;
 	}
 
-	public String getCPU() {
-		return CPU;
+	public String getGPU() {
+		return GPU;
+	}
+	public String Brand() {
+		return Brand; }
+
+	public String getMemory() {
+		return Memory;
 	}
 
-	public String getCores() {
-		return Cores;
+	public String getMemory_Type() {
+		return Memory_Type;
 	}
 
-	public String getClock_speed() {
-		return Clock_speed;
+	public String getGPU_clock() {
+		return GPU_clock;
 	}
 
-	public String getL_Caches() {
-		return L_Caches;
+	public String getMemory_clock() {
+		return Memory_clock;
 	}
 
-	public String getProcessor_Graphics() {
-		return Processor_Graphics;
-	}
-
-	public String getTDP() {
-		return TDP;
+	public String getMemory_bandwidth() {
+		return Memory_bandwidth;
 	}
 
 	public int getImage() {

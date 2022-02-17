@@ -29,22 +29,28 @@ public class GpuAdapter extends ArrayAdapter<gpuclass>{
                 listItemView = LayoutInflater.from(getContext()).inflate(R.layout.gpulist, parent, false);
             }
 
-        TextView cmTextView = (TextView) listItemView.findViewById(R.id.cm);
+        TextView cmTextView = (TextView) listItemView.findViewById(R.id.Chipset_Manufacture);
         cmTextView.setText(currentcpu.getChipset_Manufacture());
 
-        TextView cpuTextView = (TextView) listItemView.findViewById(R.id.cpu);
+        TextView cpuTextView = (TextView) listItemView.findViewById(R.id.GPU);
         cpuTextView.setText(currentcpu.getGPU());
 
-        TextView coresTextView = (TextView) listItemView.findViewById(R.id.Cores);
+        TextView BrandTextView = (TextView) listItemView.findViewById(R.id.Brand);
+        BrandTextView.setText(currentcpu.getBrand());
+
+        TextView coresTextView = (TextView) listItemView.findViewById(R.id.Memory);
         coresTextView.setText(currentcpu.getMemory());
 
-        TextView Clock_speedTextView = (TextView) listItemView.findViewById(R.id.Clock_speed);
+        TextView Clock_speedTextView = (TextView) listItemView.findViewById(R.id.Memory_Type);
         Clock_speedTextView.setText(currentcpu.getMemory_Type());
 
-        TextView Processor_GraphicsTextView = (TextView) listItemView.findViewById(R.id.Processor_Graphics);
-        Processor_GraphicsTextView.setText(currentcpu.getMemory_clock());
+        TextView Processor_GraphicsTextView = (TextView) listItemView.findViewById(R.id.GPU_clock);
+        Processor_GraphicsTextView.setText(currentcpu.getGPU_clock());
 
-        TextView TDPTextView = (TextView) listItemView.findViewById(R.id.TDP);
+        TextView Memory_clockTextView = (TextView) listItemView.findViewById(R.id.Memory_clock);
+        Memory_clockTextView.setText(currentcpu.getMemory_clock());
+
+        TextView TDPTextView = (TextView) listItemView.findViewById(R.id.Memory_bandwidth);
         TDPTextView.setText(currentcpu.getMemory_bandwidth());
 
         ImageView numbersImage = listItemView.findViewById(R.id.imageView);

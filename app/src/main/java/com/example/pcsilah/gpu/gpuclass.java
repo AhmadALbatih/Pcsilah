@@ -30,7 +30,7 @@ public class gpuclass {
 	public String getGPU() {
 		return GPU;
 	}
-	public String Brand() {
+	public String getBrand() {
 		return Brand; }
 
 	public String getMemory() {

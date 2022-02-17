@@ -28,7 +28,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
                 android:gravity="center_vertical"
-                android:text="@string/cpu_page"
+                android:text="@string/gpu_page"
                 android:textColor="@color/white"
                 android:textSize="17sp" />
         </androidx.appcompat.widget.Toolbar>

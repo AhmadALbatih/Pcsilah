@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -7,7 +11,6 @@
     android:orientation="horizontal"
     tools:context=".MainActivity"
     android:background="@color/backgrand">
-
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="84dp"
@@ -24,22 +27,21 @@
                 android:orientation="vertical"
                 >
                 <TextView
-                    android:id="@+id/cm"
+                    android:id="@+id/Chipset_Manufacture"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    tools:text="cpu"
+                    tools:text="Chipset_Manufacture"
                     android:layout_marginLeft="8dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginRight="8dp"
                     android:layout_marginBottom="8dp"
-
                     />
 
                 <TextView
-                    android:id="@+id/cpu"
+                    android:id="@+id/GPU"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    tools:text="spe"
+                    tools:text="GPU"
                     android:layout_marginLeft="8dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginRight="8dp"
@@ -51,10 +53,10 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical">
                 <TextView
-                    android:id="@+id/Cores"
+                    android:id="@+id/Brand"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    tools:text="cpu"
+                    tools:text="Brand"
                     android:layout_marginLeft="8dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginRight="8dp"
@@ -62,10 +64,10 @@
                     />
 
                 <TextView
-                    android:id="@+id/Clock_speed"
+                    android:id="@+id/Memory"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    tools:text="spe"
+                    tools:text="Memory"
                     android:layout_marginLeft="8dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginRight="8dp"
@@ -76,11 +78,11 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical">
                 <TextView
-                    android:id="@+id/Processor_Graphics"
+                    android:id="@+id/Memory_Type"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="bottom|left"
-                    tools:text="cpu"
+                    tools:text="Memory_Type"
                     android:layout_marginLeft="8dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginRight="8dp"
@@ -88,15 +90,43 @@
                     />
 
                 <TextView
-                    android:id="@+id/TDP"
+                    android:id="@+id/GPU_clock"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    tools:text="spe"
+                    tools:text="GPU_clock"
                     android:layout_marginLeft="8dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginRight="8dp"
                     android:layout_marginBottom="8dp"/>
             </LinearLayout>
-        </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/Memory_clock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom|left"
+                    tools:text="Memory_clock"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="8dp"
+                    />
+                <TextView
+                    android:id="@+id/Memory_bandwidth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom|left"
+                    tools:text="Memory_bandwidth"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="8dp"
+                    />
 
+            </LinearLayout>
+        </LinearLayout>
 </LinearLayout>
+    </HorizontalScrollView>

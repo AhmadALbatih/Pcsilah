@@ -1,52 +1,42 @@
 package com.example.pcsilah.ram;
 
 public class ramclass {
-	private String Chipset_Manufacture;
-	private String CPU;
-	private String Cores;
-	private String Clock_speed;
-	private String L_Caches;
-	private String Processor_Graphics;
-	private String TDP;
+	private String brand_name;
+	private String Memory_Speed;
+	private String Capacity;
+	private String Ram_memory_technology;
+	private String Voltage;
+
+
 	private int Image;
 
-	public ramclass(String chipset_Manufacture, String CPU, String cores, String clock_speed, String l_Caches, String processor_Graphics, String TDP, int image) {
-		Chipset_Manufacture = chipset_Manufacture;
-		this.CPU = CPU;
-		Cores = cores;
-		Clock_speed = clock_speed;
-		L_Caches = l_Caches;
-		Processor_Graphics = processor_Graphics;
-		this.TDP = TDP;
+	public ramclass(String brand_name, String Memory_Speed, String Capacity, String Ram_memory_technology, String Voltage, int image) {
+		this.brand_name = brand_name;
+		this.Memory_Speed = Memory_Speed;
+		this.Capacity = Capacity;
+		this.Ram_memory_technology = Ram_memory_technology;
+		this.Voltage = Voltage;
 		Image = image;
 	}
 
-	public String getChipset_Manufacture() {
-		return Chipset_Manufacture;
+	public String getRam_memory_technology() {
+		return Ram_memory_technology;
 	}
 
-	public String getCPU() {
-		return CPU;
+	public String getVoltage() {
+		return Voltage;
 	}
 
-	public String getCores() {
-		return Cores;
+	public String getBrand_name() {
+		return brand_name;
 	}
 
-	public String getClock_speed() {
-		return Clock_speed;
+	public String getCapacity() {
+		return Capacity;
 	}
 
-	public String getL_Caches() {
-		return L_Caches;
-	}
-
-	public String getProcessor_Graphics() {
-		return Processor_Graphics;
-	}
-
-	public String getTDP() {
-		return TDP;
+	public String getMemory_Speed() {
+		return Memory_Speed;
 	}
 
 	public int getImage() {

@@ -26,6 +26,7 @@
     <string name="cpu_page">حاسوب صلة - المعالجات</string>
     <string name="gpu_page">حاسوب صلة - كرت الشاشة</string>
     <string name="catag_page">حاسوب صلة - الأصناف</string>
+    <string name="ram_page">حاسوب صلة - الذاكرة العشوائية</string>
 
 
     <string name="f">The two widely used forms of modern RAM are static RAM (SRAM) and dynamic RAM (DRAM)\n

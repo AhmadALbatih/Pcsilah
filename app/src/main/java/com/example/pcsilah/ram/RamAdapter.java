@@ -26,26 +26,23 @@ public class RamAdapter extends ArrayAdapter<ramclass>{
         ramclass currentcpu = ramList.get(position);
 
             if(listItemView == null){
-                listItemView = LayoutInflater.from(getContext()).inflate(R.layout.gpulist, parent, false);
+                listItemView = LayoutInflater.from(getContext()).inflate(R.layout.ramlist, parent, false);
             }
 
-        TextView cmTextView = (TextView) listItemView.findViewById(R.id.cm);
-        cmTextView.setText(currentcpu.getChipset_Manufacture());
+        TextView cmTextView = (TextView) listItemView.findViewById(R.id.Ram_memory_technology);
+        cmTextView.setText(currentcpu.getRam_memory_technology());
 
-        TextView cpuTextView = (TextView) listItemView.findViewById(R.id.cpu);
-        cpuTextView.setText(currentcpu.getCPU());
+        TextView cpuTextView = (TextView) listItemView.findViewById(R.id.Voltage);
+        cpuTextView.setText(currentcpu.getVoltage());
 
-        TextView coresTextView = (TextView) listItemView.findViewById(R.id.Cores);
-        coresTextView.setText(currentcpu.getCores());
+        TextView coresTextView = (TextView) listItemView.findViewById(R.id.brand_name);
+        coresTextView.setText(currentcpu.getBrand_name());
 
-        TextView Clock_speedTextView = (TextView) listItemView.findViewById(R.id.Clock_speed);
-        Clock_speedTextView.setText(currentcpu.getClock_speed());
+        TextView Clock_speedTextView = (TextView) listItemView.findViewById(R.id.Capacity);
+        Clock_speedTextView.setText(currentcpu.getCapacity());
+        TextView Memory_SpeedTextView = (TextView) listItemView.findViewById(R.id.Memory_Speed);
+        Memory_SpeedTextView.setText(currentcpu.getMemory_Speed());
 
-        TextView Processor_GraphicsTextView = (TextView) listItemView.findViewById(R.id.Processor_Graphics);
-        Processor_GraphicsTextView.setText(currentcpu.getProcessor_Graphics());
-
-        TextView TDPTextView = (TextView) listItemView.findViewById(R.id.TDP);
-        TDPTextView.setText(currentcpu.getTDP());
 
         ImageView numbersImage = listItemView.findViewById(R.id.imageView);
         assert listItemView != null;

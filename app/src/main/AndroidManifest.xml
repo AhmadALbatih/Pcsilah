@@ -39,7 +39,7 @@
             android:name=".home_main"
             android:exported="false" />
         <activity
-            android:name=".gpu.gpu"
+            android:name=".ram.ram"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

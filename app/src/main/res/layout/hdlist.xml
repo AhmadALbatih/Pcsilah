@@ -27,10 +27,35 @@
                 android:orientation="vertical"
                 >
                 <TextView
+                    android:id="@+id/Storge_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="Storge type"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
                     android:id="@+id/brand_name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    tools:text="brand_name"
+                    tools:text="brand name"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="8dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/SRW"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text=""
                     android:layout_marginLeft="8dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginRight="8dp"
@@ -39,7 +64,7 @@
 
                 <TextView
                     android:id="@+id/Memory_Speed"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     tools:text="Memory_Speed"
                     android:layout_marginLeft="8dp"
@@ -47,38 +72,23 @@
                     android:layout_marginRight="8dp"
                     android:layout_marginBottom="8dp"/>
             </LinearLayout>
-
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:orientation="vertical">
                 <TextView
-                    android:id="@+id/Capacity"
+                    android:id="@+id/Processor_Graphics"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    tools:text="Capacity"
+                    android:gravity="bottom|left"
+                    tools:text="Voltage"
                     android:layout_marginLeft="8dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginRight="8dp"
                     android:layout_marginBottom="8dp"
                     />
-
                 <TextView
-                    android:id="@+id/Ram_memory_technology"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    tools:text="Ram_memory_technology"
-                    android:layout_marginLeft="8dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginRight="8dp"
-                    android:layout_marginBottom="8dp"/>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-                <TextView
-                    android:id="@+id/Voltage"
+                    android:id="@+id/Type_port"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="bottom|left"

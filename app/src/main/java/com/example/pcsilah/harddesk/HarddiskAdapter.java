@@ -26,25 +26,25 @@ public class HarddiskAdapter extends ArrayAdapter<harddiskclass>{
         harddiskclass currentcpu = hdList.get(position);
 
             if(listItemView == null){
-                listItemView = LayoutInflater.from(getContext()).inflate(R.layout.gpulist, parent, false);
+                listItemView = LayoutInflater.from(getContext()).inflate(R.layout.hdlist, parent, false);
             }
 
-        TextView cmTextView = (TextView) listItemView.findViewById(R.id.cm);
+        TextView cmTextView = (TextView) listItemView.findViewById(R.id.Storge_type);
         cmTextView.setText(currentcpu.getStorge_type());
 
-        TextView cpuTextView = (TextView) listItemView.findViewById(R.id.cpu);
+        TextView cpuTextView = (TextView) listItemView.findViewById(R.id.brand_name);
         cpuTextView.setText(currentcpu.getBrand_name());
 
-        TextView coresTextView = (TextView) listItemView.findViewById(R.id.Cores);
+        TextView coresTextView = (TextView) listItemView.findViewById(R.id.SRW);
         coresTextView.setText(currentcpu.getSRW());
 
-        TextView Clock_speedTextView = (TextView) listItemView.findViewById(R.id.Clock_speed);
+        TextView Clock_speedTextView = (TextView) listItemView.findViewById(R.id.Memory_Speed);
         Clock_speedTextView.setText(currentcpu.getMemory_Speed());
 
         TextView Processor_GraphicsTextView = (TextView) listItemView.findViewById(R.id.Processor_Graphics);
         Processor_GraphicsTextView.setText(currentcpu.getProcessor_Graphics());
 
-        TextView TDPTextView = (TextView) listItemView.findViewById(R.id.TDP);
+        TextView TDPTextView = (TextView) listItemView.findViewById(R.id.Type_port);
         TDPTextView.setText(currentcpu.getType_port());
 
         ImageView numbersImage = listItemView.findViewById(R.id.imageView);

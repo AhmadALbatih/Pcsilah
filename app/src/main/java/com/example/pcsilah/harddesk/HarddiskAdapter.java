@@ -41,9 +41,6 @@ public class HarddiskAdapter extends ArrayAdapter<harddiskclass>{
         TextView Clock_speedTextView = (TextView) listItemView.findViewById(R.id.Memory_Speed);
         Clock_speedTextView.setText(currentcpu.getMemory_Speed());
 
-        TextView Processor_GraphicsTextView = (TextView) listItemView.findViewById(R.id.Processor_Graphics);
-        Processor_GraphicsTextView.setText(currentcpu.getProcessor_Graphics());
-
         TextView TDPTextView = (TextView) listItemView.findViewById(R.id.Type_port);
         TDPTextView.setText(currentcpu.getType_port());
 

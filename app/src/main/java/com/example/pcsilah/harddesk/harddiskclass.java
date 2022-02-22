@@ -6,18 +6,16 @@ public class harddiskclass {
 	private String SRW;
 	private String Memory_Speed;
 	private String Capacity;
-	private String Processor_Graphics;
 	private String Type_port;
 	private int Image;
 
 	public harddiskclass(String storge_type, String BN, String srw, String MS,
-						 String capacity, String processor_Graphics, String tp, int image) {
+						 String capacity, String tp, int image) {
 		Storge_type = storge_type;
 		brand_name = BN;
 		SRW = srw;
 		Memory_Speed = MS;
 		Capacity = capacity;
-		Processor_Graphics = processor_Graphics;
 		Type_port = tp;
 		Image = image;
 	}
@@ -40,10 +38,6 @@ public class harddiskclass {
 
 	public String getCapacity() {
 		return Capacity;
-	}
-
-	public String getProcessor_Graphics() {
-		return Processor_Graphics;
 	}
 
 	public String getType_port() {

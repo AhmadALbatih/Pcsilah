@@ -1,7 +1,7 @@
 package com.example.pcsilah.harddesk;
 
 public class harddiskclass {
-	private String Chipset_Manufacture;
+	private String Storge_type;
 	private String CPU;
 	private String Cores;
 	private String Clock_speed;
@@ -10,8 +10,9 @@ public class harddiskclass {
 	private String TDP;
 	private int Image;
 
-	public harddiskclass(String chipset_Manufacture, String CPU, String cores, String clock_speed, String l_Caches, String processor_Graphics, String TDP, int image) {
-		Chipset_Manufacture = chipset_Manufacture;
+	public harddiskclass(String storge_type, String CPU, String cores, String clock_speed,
+						 String l_Caches, String processor_Graphics, String TDP, int image) {
+		Storge_type = storge_type;
 		this.CPU = CPU;
 		Cores = cores;
 		Clock_speed = clock_speed;
@@ -21,8 +22,8 @@ public class harddiskclass {
 		Image = image;
 	}
 
-	public String getChipset_Manufacture() {
-		return Chipset_Manufacture;
+	public String getStorge_type() {
+		return Storge_type;
 	}
 
 	public String getCPU() {

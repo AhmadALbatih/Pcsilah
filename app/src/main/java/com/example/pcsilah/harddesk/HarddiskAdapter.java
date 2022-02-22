@@ -13,24 +13,24 @@ import java.util.List;
 
 public class HarddiskAdapter extends ArrayAdapter<harddiskclass>{
     private static final String TAG = HarddiskAdapter.class.getSimpleName();
-    List<harddiskclass> ramList;
+    List<harddiskclass> hdList;
 
     public HarddiskAdapter(Context context, int resource, List<harddiskclass> objects) {
         super(context, resource, objects);
 
-        ramList = objects;
+        hdList = objects;
     }
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
             View listItemView = convertView;
-        harddiskclass currentcpu = ramList.get(position);
+        harddiskclass currentcpu = hdList.get(position);
 
             if(listItemView == null){
                 listItemView = LayoutInflater.from(getContext()).inflate(R.layout.gpulist, parent, false);
             }
 
         TextView cmTextView = (TextView) listItemView.findViewById(R.id.cm);
-        cmTextView.setText(currentcpu.getChipset_Manufacture());
+        cmTextView.setText(currentcpu.getStorge_type());
 
         TextView cpuTextView = (TextView) listItemView.findViewById(R.id.cpu);
         cpuTextView.setText(currentcpu.getCPU());

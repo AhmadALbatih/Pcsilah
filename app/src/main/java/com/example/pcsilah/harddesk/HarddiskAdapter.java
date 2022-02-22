@@ -33,19 +33,19 @@ public class HarddiskAdapter extends ArrayAdapter<harddiskclass>{
         cmTextView.setText(currentcpu.getStorge_type());
 
         TextView cpuTextView = (TextView) listItemView.findViewById(R.id.cpu);
-        cpuTextView.setText(currentcpu.getCPU());
+        cpuTextView.setText(currentcpu.getBrand_name());
 
         TextView coresTextView = (TextView) listItemView.findViewById(R.id.Cores);
-        coresTextView.setText(currentcpu.getCores());
+        coresTextView.setText(currentcpu.getSRW());
 
         TextView Clock_speedTextView = (TextView) listItemView.findViewById(R.id.Clock_speed);
-        Clock_speedTextView.setText(currentcpu.getClock_speed());
+        Clock_speedTextView.setText(currentcpu.getMemory_Speed());
 
         TextView Processor_GraphicsTextView = (TextView) listItemView.findViewById(R.id.Processor_Graphics);
         Processor_GraphicsTextView.setText(currentcpu.getProcessor_Graphics());
 
         TextView TDPTextView = (TextView) listItemView.findViewById(R.id.TDP);
-        TDPTextView.setText(currentcpu.getTDP());
+        TDPTextView.setText(currentcpu.getType_port());
 
         ImageView numbersImage = listItemView.findViewById(R.id.imageView);
         assert listItemView != null;

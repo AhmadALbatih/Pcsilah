@@ -2,23 +2,23 @@ package com.example.pcsilah.harddesk;
 
 public class harddiskclass {
 	private String Storge_type;
-	private String CPU;
-	private String Cores;
-	private String Clock_speed;
-	private String L_Caches;
+	private String brand_name;
+	private String SRW;
+	private String Memory_Speed;
+	private String Capacity;
 	private String Processor_Graphics;
-	private String TDP;
+	private String Type_port;
 	private int Image;
 
-	public harddiskclass(String storge_type, String CPU, String cores, String clock_speed,
-						 String l_Caches, String processor_Graphics, String TDP, int image) {
+	public harddiskclass(String storge_type, String BN, String srw, String MS,
+						 String capacity, String processor_Graphics, String tp, int image) {
 		Storge_type = storge_type;
-		this.CPU = CPU;
-		Cores = cores;
-		Clock_speed = clock_speed;
-		L_Caches = l_Caches;
+		brand_name = BN;
+		SRW = srw;
+		Memory_Speed = MS;
+		Capacity = capacity;
 		Processor_Graphics = processor_Graphics;
-		this.TDP = TDP;
+		Type_port = tp;
 		Image = image;
 	}
 
@@ -26,28 +26,28 @@ public class harddiskclass {
 		return Storge_type;
 	}
 
-	public String getCPU() {
-		return CPU;
+	public String getBrand_name() {
+		return brand_name;
 	}
 
-	public String getCores() {
-		return Cores;
+	public String getSRW() {
+		return SRW;
 	}
 
-	public String getClock_speed() {
-		return Clock_speed;
+	public String getMemory_Speed() {
+		return Memory_Speed;
 	}
 
-	public String getL_Caches() {
-		return L_Caches;
+	public String getCapacity() {
+		return Capacity;
 	}
 
 	public String getProcessor_Graphics() {
 		return Processor_Graphics;
 	}
 
-	public String getTDP() {
-		return TDP;
+	public String getType_port() {
+		return Type_port;
 	}
 
 	public int getImage() {

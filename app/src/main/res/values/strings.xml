@@ -1,15 +1,41 @@
 <resources>
-    <string name="app_name">pcsilah</string>
+    <string name="app_name"> حاسوب صلة</string>
     <string name="action_settings">Settings</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
     <string name="second_fragment_label">Second Fragment</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
-
+    <string name="cpu">المعالجات</string>
+    <string name="gpu">كرت الشاشة</string>
+    <string name="ram">ذاكرة عشاوئية</string>
+    <string name="cases">صندوق </string>
+    <string name="harddisk">قرص صلب </string>
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="tot">عرض تجريبي</string>
     <string name="ifo">استعلام عن المواصفات</string>
+    <string name="skip">تخطي</string>
+    <string name="Questions1">مقدار ميزانية</string>
+    <string name="Questions1_o1">600$-1000$</string>
+    <string name="Questions1_o2">1100-2000$</string>
+    <string name="Questions1_o3">اكثر من 2000$</string>
+    <string name="Questions_page2"> نوع استخدام</string>
+    <string name="Questions2_o1">شخصي</string>
+    <string name="Questions2_o2">عمل</string>
+    <string name="Questions2_o3">العاب</string>
+    <string name="cpu_page">حاسوب صلة - المعالجات</string>
+    <string name="gpu_page">حاسوب صلة - كرت الشاشة</string>
+    <string name="catag_page">حاسوب صلة - الأصناف</string>
+    <string name="ram_page">حاسوب صلة - الذاكرة العشوائية</string>
+    <string name="hd_page">حاسوب صلة - الأقراص الصلبة</string>
+
+
+    <string name="f">The two widely used forms of modern RAM are static RAM (SRAM) and dynamic RAM (DRAM)\n
+. In SRAM, a bit of data is stored using the state of a six-transistor memory cell, typically using\n six MOSFETs (metal-oxide-semiconductor field-effect transistors).\n
+. In SRAM, a bit of data is stored using the state of a six-transistor memory cell, typically using\n six MOSFETs (metal-oxide-semiconductor field-effect transistors).\n
+. In SRAM, a bit of data is stored using the state of a six-transistor memory cell, typically using\n six MOSFETs (metal-oxide-semiconductor field-effect transistors).\n
+. In SRAM, a bit of data is stored using the state of a six-transistor memory cell, typically using\n six MOSFETs (metal-oxide-semiconductor field-effect transistors).\n
+</string>
 
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 </resources>

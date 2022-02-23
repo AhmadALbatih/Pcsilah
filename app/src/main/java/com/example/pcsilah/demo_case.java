@@ -20,8 +20,6 @@ public class demo_case extends AppCompatActivity {
     TextView textview;
     ImageView end;
     protected void onCreate(Bundle savedInstanceState) {
-        Intent intent = getIntent();
-        HashMap<String, String> hashMap = (HashMap<String, String>)intent.getSerializableExtra("map");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_demo_case);
         textview = (TextView) findViewById(R.id.tv3);

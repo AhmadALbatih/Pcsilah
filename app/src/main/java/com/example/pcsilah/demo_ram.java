@@ -25,7 +25,7 @@ public class demo_ram extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent i = new Intent(demo_ram.this,demo_case.class);
+                Intent i = new Intent(demo_ram.this,MainActivity.class);
                 startActivity(i);
             }
         });

@@ -1,23 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.pcsilah">
+    package="com.example.pcsilah"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
-        android:supportsRtl="true"
+        android:supportsRtl="false"
+        tools:replace="android:supportsRtl"
         android:theme="@style/Theme.Pcsilah">
+        <activity
+            android:name=".Catagori"
+            android:exported="false" />
+        <activity
+            android:name=".Result"
+            android:exported="false" />
+        <activity
+            android:name=".Questions_page2"
+            android:exported="false" />
+        <activity
+            android:name=".Questions_page1"
+            android:exported="false" />
         <activity
             android:name=".demo_ssd"
             android:exported="false" />
-
         <activity
             android:name=".demo_case"
-            android:exported="false"/>
-
-
+            android:exported="false" />
+        <activity
+            android:name=".demo_m"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="false" />
@@ -25,14 +39,8 @@
             android:name=".home_main"
             android:exported="false" />
         <activity
-            android:name=".demo_gpu"
-            android:exported="false"/>
-        <activity
-            android:name=".demo_ram"
-            android:exported="false"/>
-            <activity
-                android:name=".demo_m"
-                android:exported="true">
+            android:name=".gpu.gpu"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

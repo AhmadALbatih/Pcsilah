@@ -35,7 +35,7 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="إنهاء"
+        android:text="التالي"
         android:textColor="@color/btnstart"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"

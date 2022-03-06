@@ -25,7 +25,7 @@ public class demo_m extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent i = new Intent(demo_m.this,demo_gpu.class);
+                Intent i = new Intent(demo_m.this,demo_ram.class);
                 startActivity(i);
             }
         });

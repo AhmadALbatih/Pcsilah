@@ -25,11 +25,11 @@ public class demo_ram extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent i = new Intent(demo_ram.this,MainActivity.class);
+                Intent i = new Intent(demo_ram.this,demo_gpu.class);
                 startActivity(i);
             }
         });
-        String para ="الوصول العشوائي\n" +
+        String para ="4- الوصول العشوائي \n" +
                 "هي مكان تخزين مؤقت على جهاز الكمبيوتر يمكن الوصول الى محتوياته في وقت محدد ، بغض النظر عن موقع البيانات في الذاكرة، لذا فإن ذاكرة الوصول العشوائي هذه هي مجرد تخزين مؤقت عند استخدام جهاز كمبيوتر أو برنامج معين بحيث يمكن معالجتها بسرعة.\n" +
                 "\n" +
                 "                                                                    :RAMوظيفة \n" +

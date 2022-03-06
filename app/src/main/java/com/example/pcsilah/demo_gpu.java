@@ -25,11 +25,11 @@ public class demo_gpu extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent i = new Intent(demo_gpu.this,demo_case.class);
+                Intent i = new Intent(demo_gpu.this,demo_ssd.class);
                 startActivity(i);
             }
         });
-        String para ="(GPU)graphics processing unit – 5\n" +
+        String para ="5- (GPU)graphics processing unit وحدة معالجة الرسومات \n" +
                 "يرمز \"GPU\" إلى وحدة معالجة الرسومات ، وهو جزء من الكمبيوتر مسؤول عن الصور التي تظهر على الشاشة. تستخدم في العديد من التطبيقات مثل العاب الفديو والذكاء الاصطناعي. \n" +
                 "\n" +
                 "لدى وحدات معالجة الرسومات نوعيين اساسين وهما \n" +

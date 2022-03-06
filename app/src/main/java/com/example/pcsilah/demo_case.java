@@ -28,7 +28,7 @@ public class demo_case extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent i = new Intent(demo_case.this,demo_ssd.class);
+                Intent i = new Intent(demo_case.this,MainActivity.class);
                 startActivity(i);
             }
         });

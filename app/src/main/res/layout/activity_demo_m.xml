@@ -7,17 +7,16 @@
     tools:context=".demo_gpu"
     android:background="@color/backgrand">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="372dp"
-        android:layout_height="209dp"
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="349dp"
+        android:layout_height="127dp"
+        android:src="@drawable/cpugif"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.489"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/cpu" />
+        app:layout_constraintVertical_bias="0.026" />
 
     <ImageView
         android:id="@+id/next"
@@ -47,18 +46,17 @@
 
     <TextView
         android:id="@+id/tv3"
-        android:layout_width="383dp"
-        android:layout_height="395dp"
+        android:layout_width="358dp"
+        android:layout_height="475dp"
         android:textColor="@color/black"
         android:textSize="18dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.551"
+        app:layout_constraintHorizontal_bias="0.679"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.705"
+        app:layout_constraintVertical_bias="0.605"
         tools:ignore="MissingConstraints" />
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
